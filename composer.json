@@ -1,0 +1,17 @@
+{
+    "name": "swag-training/products-storefront",
+    "description": "Products storefront",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "SwagTraining\\ProductsStorefront\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "SwagTraining\\ProductsStorefront\\SwagTrainingProductsStorefront",
+        "label": {
+            "en-GB": "Products storefront"
+        }
+    }
+}

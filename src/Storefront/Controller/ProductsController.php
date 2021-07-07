@@ -5,8 +5,6 @@ namespace SwagTraining\ProductsStorefront\Storefront\Controller;
 use Shopware\Core\Framework\Context;
 use Shopware\Core\Framework\DataAbstractionLayer\EntityRepositoryInterface;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Criteria;
-use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\ContainsFilter;
-use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\EqualsFilter;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Filter\PrefixFilter;
 use Shopware\Core\Framework\DataAbstractionLayer\Search\Sorting\FieldSorting;
 use Shopware\Core\Framework\Routing\Annotation\RouteScope;
@@ -33,8 +31,7 @@ class ProductsController extends StorefrontController
 
     /**
      * @Since("6.4.0.0")
-     * @Route("/swag-training/products", name="frontend.swag-training-products.products", methods={"GET"},
-     *                             defaults={"XmlHttpRequest"=true})
+     * @Route("/swag-training/products-storefront", name="frontend.swag-training-products.products", methods={"GET"}, defaults={"XmlHttpRequest"=true})
      */
     public function getData(Request $request, Context $context): Response
     {

@@ -33,7 +33,7 @@ class ProductsController extends StorefrontController
 
     /**
      * @Since("6.4.0.0")
-     * @Route("/example/products", name="frontend.swag-training-products.products", methods={"GET"}, defaults={"XmlHttpRequest"=true})
+     * @Route("/swag-training/products-storefront", name="frontend.swag-training-products.products", methods={"GET"}, defaults={"XmlHttpRequest"=true})
      */
     public function getData(Request $request, Context $context): Response
     {
